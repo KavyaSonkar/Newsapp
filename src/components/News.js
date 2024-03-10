@@ -2,33 +2,59 @@ import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 
 export class News extends Component {
- articles = [
-  {
-    "source":{"id":null,"name":"The Weather Channel"},"author":"The Weather Channel","title":"California Set For Pair Of Atmospheric River Storms | Weather.com - The Weather Channel","description":"Here's what to know about a stormy pattern that will affect California and other parts of the West through the weekend. - Articles from The Weather Channel | weather.com","url":"https://weather.com/forecast/regional/news/2024-01-30-california-atmospheric-river-storms-flooding-rain-snow-strong","urlToImage":"https://s.w-x.co/atmosrivercawedam_0.jpg","publishedAt":"2024-01-31T11:31:07Z","content":"At a Glance\r\n<ul><li>A storm pulling in an atmospheric river of moisture is coming ashore.</li><li>This system will bring a soaking to California through Thursday, which could trigger some flooding a… [+4087 chars]"},
-    {"source":{"id":null,"name":"WPVI-TV"},"author":null,"title":"Justin Mohn charged after father found decapitated inside home on Upper Orchard Drive in Bucks County, Pennsylvania - WPVI-TV","description":"A Pennsylvania man is accused of not only beheading his father but also posting the video of him committing the act to YouTube.","url":"https://6abc.com/justin-mohn-levitttown-middletown-township-pa-father-killed/14373700/","urlToImage":"https://cdn.abcotvs.com/dip/images/14374352_013124-wpvi-middletown-beheading-530a-pkg-video-vid.jpg?w=1600","publishedAt":"2024-01-31T11:15:00Z","content":"MIDDLETOWN TWP., Pennsylvania (WPVI) -- A Pennsylvania man has been charged after his father was found beheaded inside their family home Tuesday night in Middletown Township, Bucks County.\r\nThe victi… [+2161 chars]"},
-     {"source":{"id":null,"name":"The Athletic"},"author":"Mark Puleo and Sam Amick","title":"Joel Embiid suffers knee injury in final minutes of 76ers loss to Warriors - The Athletic","description":"Embiid has missed 12 total games this season and is five absences away from becoming ineligible for postseason awards.","url":"https://theathletic.com/5240138/2024/01/31/joel-embiid-injury-76ers-warriors/","urlToImage":"https://cdn.theathletic.com/app/uploads/2024/01/31004057/USATSI_22409094-scaled.jpg","publishedAt":"2024-01-31T10:11:05Z","content":"Defending NBA MVP Joel Embiid injured his left knee in the final minutes of the Philadelphia 76ers loss to the Golden State Warriors on Tuesday night at Chase Center.\r\nWith just over four minutes to … [+4816 chars]"},
-    {"source":{"id":null,"name":"BBC News"},"author":null,"title":"Elon Musk sees $56bn Tesla pay deal cancelled in court - BBC.com","description":"The court found the process of deciding Elon Musk's huge 2018 pay award was \"deeply flawed\".","url":"https://www.bbc.com/news/business-68150306","urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/F474/production/_132508526_gettyimages-1963458442.jpg","publishedAt":"2024-01-31T09:57:00Z","content":"By Mariko OiBusiness reporter\r\nA judge in the US state of Delaware has annulled a $55.8bn (£44bn) pay deal awarded to Elon Musk in 2018 by the electric car company Tesla.\r\nThe lawsuit was filed by a … [+3904 chars]"},
-    {"source":{"id":null,"name":"BBC News"},"author":null,"title":"Kataib Hezbollah: Iran-backed group suspends attacks against US after drone strike - BBC.com","description":"Kataib Hezbollah is believed to have been behind the attack in Jordan that killed three US troops.","url":"https://www.bbc.com/news/world-us-canada-68150359","urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/500A/production/_132509402_kataib-hezbollah_reuters.jpg","publishedAt":"2024-01-31T09:51:00Z","content":"Watch: Biden tells press he has decided on a response to the drone attack in Jordan\r\nAn Iran-backed Iraqi militia suspected of a drone strike in Jordan that killed three US soldiers says it has suspe… [+5251 chars]"},
-    {"source":{"id":null,"name":"BBC News"},"author":null,"title":"Chita Rivera: Tributes to 'theatrical legend' who has died at 91 - BBC.com","description":"The trailblazing \"triple threat\" is known for her pioneering roles in iconic musicals like West Side Story.","url":"https://www.bbc.com/news/world-us-canada-68149314","urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/9326/production/_132507673_gettyimages-971156602cropped.jpg","publishedAt":"2024-01-31T09:19:00Z","content":"One of Broadway's most celebrated stars, Chita Rivera, has died at the age of 91.\r\nThe Tony Award-winning entertainer is known for her successful theatre career spanning nearly seven decades.\r\nHer mo… [+3774 chars]"},
-    {"source":{"id":null,"name":"FRANCE 24 English"},"author":"FRANCE 24, FRANCE 24","title":"French farmers close in on Paris as government struggles to calm protests - FRANCE 24 English","description":"French police arrested some protesting farmers on Wednesday as convoys of tractors edged closer to Paris, Lyon and other strategic locations in France, with many ignoring warnings of police intervention if they cross red lines laid down by ministers.","url":"https://www.france24.com/en/france/20240131-french-farmers-maintain-siege-of-paris-as-govt-struggles-to-calm-protests","urlToImage":"https://s.france24.com/media/display/3cefb67e-c01b-11ee-907a-005056a97e36/w:1280/p:16x9/2024-01-31T091529Z_3843583_RC2XS5A0JZBL_RTRMADP_3_FRANCE-POLITICS-FARMERS.JPG","publishedAt":"2024-01-31T08:47:33Z","content":"French police arrested some protesting farmers on Wednesday as convoys of tractors edged closer to Paris, Lyon and other strategic locations in France, with many ignoring warnings of police intervent… [+5579 chars]"},
-    {"source":{"id":null,"name":"CNBC"},"author":"Arjun Kharpal","title":"Taylor Swift's label UMG to pull music from TikTok, accusing the social media app of bullying - CNBC","description":"Universal Music Group, which represents megastars from Taylor Swift to Drake, accused TikTok of not paying \"fair value\" for its music.","url":"https://www.cnbc.com/2024/01/31/universal-music-group-taylor-swifts-label-to-pull-music-from-tiktok.html","urlToImage":"https://image.cnbcfm.com/api/v1/image/107329589-1699292646461-gettyimages-1584250465-1327526-et-taylor-swift-eras-tour-performance-68-ajs.jpeg?v=1706687133&w=1920&h=1080","publishedAt":"2024-01-31T08:14:02Z","content":"Universal Music Group said on Wednesday that it will cease licensing its music to TikTok and accused the short-form video giant of bullying and intimidation in its contract negotiations.\r\nA music lic… [+2912 chars]"},
-    {"source":{"id":"cnn","name":"CNN"},"author":"Sophia Saifi, Rhea Mogul, Azaz Syed","title":"Pakistan’s former leader Imran Khan sentenced to 14 years in prison, a day after being jailed for 10 years - CNN","description":"Pakistan’s incarcerated former Prime Minister Imran Khan has been sentenced to 14 years in prison for corruption, his Pakistan Tehreef-e-Insaaf (PTI) party said Wednesday, in the second legal blow to beset the beleaguered politician this week.","url":"https://www.cnn.com/2024/01/31/asia/pakistan-imran-khan-sentence-14-years-intl-hnk/index.html","urlToImage":"https://media.cnn.com/api/v1/images/stellar/prod/240130095722-imran-khan-031523.jpg?c=16x9&q=w_800,c_fill","publishedAt":"2024-01-31T08:08:00Z","content":"Pakistans incarcerated former Prime Minister Imran Khan has been sentenced to 14 years in prison for corruption, his Pakistan Tehreef-e-Insaaf (PTI) party said Wednesday, in the second legal blow to … [+2617 chars]"},
-    {"source":{"id":"techcrunch","name":"TechCrunch"},"author":"Ivan Mehta","title":"Sundar Pichai says Google One cloud storage service has nearly 100M subscribers - TechCrunch","description":"Google CEO Sudar Pichai said that the company's Google One cloud storage service is \" just about to cross\" 100 million subscribers.","url":"https://techcrunch.com/2024/01/30/sundar-pichai-says-google-one-cloud-storage-service-has-nearly-100m-subscribers/","urlToImage":"https://techcrunch.com/wp-content/uploads/2021/10/GettyImages-1337404394.jpg?resize=1200,800","publishedAt":"2024-01-31T06:41:00Z","content":"Google CEO Sudar Pichai said that the company’s Google One cloud storage service is ” just about to cross” 100 million subscribers.\r\nSpeaking during Alphabet’s Q4 2023 earning call, Pichai added that… [+1880 chars]"},
-    {"source":{"id":"fox-news","name":"Fox News"},"author":"Adam Shaw","title":"Mayorkas impeachment articles approved by committee, setting up full House vote - Fox News","description":"The House Homeland Security Committee approved two articles of impeachment against DHS Secretary Alejandro Mayorkas, setting up a floor vote in the coming weeks.","url":"https://www.foxnews.com/politics/mayorkas-impeachment-articles-approved-by-committee-setting-up-full-house-vote","urlToImage":"https://static.foxnews.com/foxnews.com/content/uploads/2024/01/green-thompson.jpg","publishedAt":"2024-01-31T06:29:00Z","content":"The House Homeland Security Committee on Tuesday approved, along party lines, two articles of impeachment against Homeland Security Secretary Alejandro Mayorkas -- teeing up a floor vote as early as … [+5341 chars]"},
-    {"source":{"id":null,"name":"ScienceAlert"},"author":"Universe Today","title":"Breathtaking JWST Images of 19 Spiral Galaxies Reveal Incredible Diversity - ScienceAlert","description":"If you're fascinated by Nature, these images of spiral galaxies won't help you escape your fascination.","url":"https://www.sciencealert.com/breathtaking-jwst-images-of-19-spiral-galaxies-reveal-incredible-diversity","urlToImage":"https://www.sciencealert.com/images/2024/01/GalaxyNG1566HubbleAndJWSTviews.jpg","publishedAt":"2024-01-31T06:28:09Z","content":"If you're fascinated by Nature, these images of spiral galaxies won't help you escape your fascination.\r\nThese images show incredible detail in 19 spirals, imaged face-on by the JWST. The galactic ar… [+7034 chars]"},
-    {"source":{"id":null,"name":"Yahoo Entertainment"},"author":"Gina Vivinetto","title":"Watch Taylor Swift and Kylie Kelce share the biggest hug in new video from playoff game - Yahoo News","description":"Taylor Swift and Kylie Kelce shared a hug as the Kansas City Chiefs played the Baltimore Ravens in the AFC championship game on Jan. 28.","url":"https://news.yahoo.com/watch-taylor-swift-kylie-kelce-043531862.html","urlToImage":"https://s.yimg.com/ny/api/res/1.2/20kXK4MHnfzGNfYTHEfRFQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/nbc_today_217/d8358eb5886c570b315cff677914aa4e","publishedAt":"2024-01-31T04:35:00Z","content":"Taylor Swift and Kylie Kelce shared an emotional embrace as the Kansas City Chiefs played the Baltimore Ravens in the AFC championship game in Baltimore on Jan. 28.\r\nSwift's close friend Keleigh Tell… [+1732 chars]"},
-    {"source":{"id":null,"name":"Baltimore Sun"},"author":"Jeff Barker, Matt Weyrich","title":"Orioles strike deal to sell team to Baltimore native David Rubenstein for $1.725B - Baltimore Sun","description":"The Angelos family has reached an agreement to sell the Orioles and MASN to private equity billionaire David Rubenstein, who heads a group of investors expected to include Cal Ripken Jr.","url":"http://www.baltimoresun.com/2024/01/30/orioles-sale-david-rubenstein-angelos-family/","urlToImage":"https://www.baltimoresun.com/wp-content/uploads/2024/01/TBS-L-thumb-te-ae-rubenstein-06p1_162894885.jpg?w=1024&h=576","publishedAt":"2024-01-31T04:18:45Z","content":"The Angelos family has reached an agreement to sell the Orioles to private equity billionaire David Rubenstein, three sources with direct knowledge of the deal told The Baltimore Sun. Rubenstein, who… [+10144 chars]"},
-    {"source":{"id":"the-washington-post","name":"The Washington Post"},"author":"Shane Harris, John Hudson, Karen DeYoung, Souad Mekhennet","title":"Israeli intelligence prompted U.S. to quickly cut Gaza aid funding - The Washington Post","description":"The U.N. relief agency must conduct a “credible investigation” of workers alleged to have participated in the Oct. 7 attacks, a senior U.S. official said.","url":"https://www.washingtonpost.com/national-security/2024/01/30/unrwa-gaza-israel-aid/","urlToImage":"https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/PREWNQOXW2AX4QNI3GMYGYTZ24_size-normalized.jpg&w=1440","publishedAt":"2024-01-31T03:56:00Z","content":"Early last week, Israels Foreign Ministry summoned a senior United Nations official to its office in Jerusalem and presented him with a startling allegation: Twelve of his agencys workers had taken p… [+10109 chars]"},
-  {"source":{"id":"cbs-news","name":"CBS News"},"author":"Katrina Kaufman, Jared Eggleston","title":"Fani Willis will not have to testify Wednesday in special prosecutor's divorce case - CBS News","description":"Fulton County District Attorney Fani Willis will not have to testify Wednesday in special prosecutor Nathan Wade's divorce case, as a result of a temporary agreement.","url":"https://www.cbsnews.com/news/fani-willis-trump-2020-election-case-special-prosecutor-nathan-wade-divorce-case-no-testimony/","urlToImage":"https://assets1.cbsnewsstatic.com/hub/i/r/2024/01/31/db7202e0-34b6-4a75-8cbb-749ea8002e22/thumbnail/1200x630g2/b53c1effc74647ceb166e984f4321c35/gettyimages-1601917543.jpg?v=82ad4e2325e43ceb15c3334435d40e92","publishedAt":"2024-01-31T02:39:00Z","content":"The day before a scheduled hearing in Fulton County special prosecutor Nathan Wade's divorce case, a judge indicated that Wade and his estranged wife, Jocelyn Wade, have come to a temporary agreement… [+3228 chars]"},
-  ]
+ 
 constructor(){             //always write super
     super();
     console.log('hello i am constructor for new component');
     this.state={
-      articles: this.articles,
-      loading:false
+      articles: [],
+      loading:false,
+      page:1
     }
 }
+
+async componentDidMount(){
+  let url = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=8a709edc2c8c4434a48e5b4208c3eab5&pagesize=18";
+  let data = await fetch(url);
+  let parsedData = await data.json()
+  console.log(parsedData);
+  this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults})
+}
+
+
+handlePreviousClick= async ()=>{
+  console.log("previous");
+  let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=8a709edc2c8c4434a48e5b4208c3eab5&page=${this.state.page -1}`;
+  let data = await fetch(url);
+  let parsedData = await data.json()
+  console.log(parsedData);
+  this.setState({
+    page: this.state.page -1,
+    articles: parsedData.articles
+    
+  })
+}
+
+
+handleNextClick= async ()=>{
+  console.log('next');
+
+  if(this.state.page +1 > Math.ceil(this.state.totalResults/18)){
+
+  }
+  else{
+  let url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=8a709edc2c8c4434a48e5b4208c3eab5&page=${this.state.page +1} &pagesize=18`;
+  let data = await fetch(url);
+  let parsedData = await data.json()
+  console.log(parsedData);
+  this.setState({
+    page: this.state.page +1,
+    articles: parsedData.articles
+  
+  })
+}
+}
+
   render() {
     return (
       <div className="container my-3">
@@ -36,11 +62,16 @@ constructor(){             //always write super
         <div className='row'>
         {this.state.articles.map((element)=>{   
           return <div className='col-md-4' key={element.url} >
-            <NewsItems title={element.title.slice(0,45)} description={element.description.slice(0,88)} imageUrl={element.urlToImage} url={element.url}/>
+            <NewsItems title={element.title} description={element.description} imageUrl={element.urlToImage} url={element.url}/>
         </div>
         })}
         </div>
-      </div>
+        <div className='container d-flex justify-content-between'> 
+        <button disabled={this.state.page<=1} type="button" className="btn btn-dark" onClick={this.handlePreviousClick}>&larr; Previous</button>
+        <button type="button" className="btn btn-dark" onClick={this.handleNextClick}>Next &rarr;</button>
+        </div>
+        </div>
+      
     )
   }
 }

@@ -12,7 +12,7 @@ export class News extends Component {
     category: 'general'
  }
 
- static PropTypes = {
+ static propTypes = {
   country: PropTypes.string,
   pageSize: PropTypes.number,
   category: PropTypes.string,
@@ -76,7 +76,7 @@ handleNextClick= async ()=>{
   render() {
     return (
       <div className="container my-3">
-        <h1 className='text-center' style={{margin: "40px 0px;"}}>News- website top headline</h1> 
+        <h1 className='text-center' style={{margin: "40px 0px"}}>News- website top headline</h1> 
         {this.state.loading && <Spinner/>}
         <div className='row'>
         {!this.state.loading && this.state.articles.map((element)=>{  //first wala part = blank hojae spunner dikhega tb 

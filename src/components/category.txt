@@ -1,11 +1,3 @@
-<Route path="/business"><News pageSize={3} country='in' category='general'/></Route>
-<Route path="/entertainment"><News pageSize={3} country='in' category='general'/></Route>
-<Route path="/general"><News pageSize={3} country='in' category='general'/></Route>
-<Route path="/health"><News pageSize={3} country='in' category='general'/></Route>
-<Route path="/science"><News pageSize={3} country='in' category='general'/></Route>
-<Route path="/sports"><News pageSize={3} country='in' category='general'/></Route>
-<Route path="/technology"><News pageSize={3} country='in' category='general'/></Route>
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
-
-
-<Route path="/"><News pageSize={3} country='in' category='general'/></Route>
+video 35 if we want to add infinite scroll we can create our own logic or else use code of others. i am using npm package

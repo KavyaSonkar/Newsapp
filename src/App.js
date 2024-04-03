@@ -1,13 +1,9 @@
 import './App.css';
-import React, { Component } from 'react'
+import React from 'react'
 import NavBar from './components/NavBar';
 import News from './components/News';
-import NewsItems from './components/NewsItems';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 
 
 const App = () => {

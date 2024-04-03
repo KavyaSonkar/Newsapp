@@ -10,9 +10,7 @@ const News = (props) => {
   const [loading, setLoading] = useState(true)
   const [page, setPage] = useState(1)
   const [totalResults, settotalResults] = useState(0)
-  // document.title = `${this.capitalizeFirstLetter(
-  //   this.props.category
-  // )} -NewsMonkey`;
+
 
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -34,6 +32,7 @@ const News = (props) => {
   //useeffect for async componentDidMount() {}   --[] listen=empty array means nothing
 
   useEffect(() => {
+    document.title = `${capitalizeFirstLetter(props.category)} -NewsMonkey`;
     updateNews();
   }, [])
 
@@ -54,10 +53,10 @@ const News = (props) => {
   // };
 
   const fetchMoreData = async () => {
-
-    setPage(page + 1)
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&pagesize=${props.pageSize}`;
+    // setPage(page + 1)
+    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page + 1}&pagesize=${props.pageSize}`;
     // this.setState({ loading: true });  cz we want to show spinner while loading on top
+    setPage(page + 1)
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(articles.concat(parsedData.articles))
@@ -69,7 +68,7 @@ const News = (props) => {
 
   return (
     <div className="container my-3">
-      <h1 className="text-center" style={{ margin: "40px 0px" }}>
+      <h1 className="text-center" style={{ margin: "40px 0px", marginTop: "100px" }}>
         Top {capitalizeFirstLetter(props.category)} headline
       </h1>
       {/* uncomment done cz upr spinner ikhane ke lie */}
